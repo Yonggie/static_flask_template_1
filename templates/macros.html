@@ -1,0 +1,248 @@
+<!--this is macros html-->
+
+{%macro Header()%}
+<div class="nav-wrapper smoothie">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <a class="logo" href="/"><img alt="" class="logo img-responsive" src="../static/images/logo.png" ></a>
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                </button>
+                <div class="col-xs-9">
+                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">首页 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="{{url_for('index')}}">首页</a></li>
+                                    <li><a href="#">其他</a></li>
+                                    <li><a href="#">其他</a></li>
+                                    <li><a href="#">其他</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">课程 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="{{url_for('courses_detail')}}">课程详情</a></li>
+                                  <li><a href="#">其他</a></li>
+                                  <li><a href="{{url_for('single_course')}}">单个课程</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新闻消息 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="{{url_for('news_formats')}}">消息</a></li>
+                                  <li><a href="{{url_for('single_post')}}">单个课程评论</a></li>
+                                    <li><a href="#">其他</a></li>
+                                  <li><a href="#">其他</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="{{url_for('about_us')}}">关于我们</a></li>
+                                  <li><a href="#">其他</a></li>
+                                  <li><a href="#">其他</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="{{url_for('contact_us')}}">联系我们</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+                                <ul class="dropdown-menu">
+                                    <form class="form-inline">
+                                        <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="搜索">
+                                    </form>
+                                  </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{%endmacro%}
+
+{%macro BigPicture(word,subword=' ')%}
+<header id="home" class="backstretched single-page-hero">
+            <div class="dark-overlay single-page-hero">
+                <div class="container single-page-hero">
+                    <div class="vertical-center-js text-center">
+                        <h1>{{word}}</h1>
+                    </div>
+                    <p class="section-sub-title">{{subword}}</p>
+                    <p>
+                        <a class="btn btn-white btn-lg page-scroll" href="#about-us" role="button">Why?</a>
+                        <a class="btn btn-lg btn-primary btn-green page-scroll" href="#our-team" role="button">Browse
+                            Courses</a>
+                    </p>
+                </div>
+            </div>
+        </header>
+{%endmacro%}
+
+{%macro Footer()%}
+<section class="dark-wrapper green-wrapper">
+    <div class="section-inner-60">
+        <div class="container">
+            <div class="row cta">
+                <div class="col-sm-9">
+                    <h4>获取更多信息吗</h4>
+                </div>
+                <div class="col-sm-3 text-right">
+                    <a href="{{url_for('contact_us')}}" class="btn btn-white btn-lg">联系我们！</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row mb90">
+            <div class="col-2">
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="text-widget widget">
+                        <h4 class="widget-title mb40">Location</h4>
+                        <div class="widget-content">
+                            <p>Conveniently enhance high-quality imperatives vis-a-vis team driven technologies. Intrinsicly fashion economically sound communities rather than principle-centered deliverables. Synergistically impact.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="useful-link-widget widget">
+                        <h4 class="widget-title mb40">Pages</h4>
+                        <div class="widget-content">
+                            <div class="useful-link-list">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <i class="fa fa-angle-right"></i><a href="#">Teachers</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-angle-right"></i><a href="#">Courses</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-angle-right"></i><a href="#">Support</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-angle-right"></i><a href="#">Why Scholar</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-angle-right"></i><a href="#">Social Media</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-angle-right"></i><a href="#">Site Map</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <i class="fa fa-angle-right"></i><a href="#">Company</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-angle-right"></i><a href="#">Latest Courses</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-angle-right"></i><a href="#">Partners</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-angle-right"></i><a href="#">Blog Post</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-angle-right"></i><a href="#">Help Topic</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-angle-right"></i><a href="#">Policies</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="gallery-widget widget">
+                        <h4 class="widget-title mb40">Gallery</h4>
+                        <div class="widget-content">
+                            <div class="gallery-list">
+                                <a class="thumb" href="#">
+                                    <img alt="" class="img-responsive" src="../static/images/blog-1.jpeg">
+                                </a>
+                                <a class="thumb" href="#">
+                                    <img alt="" class="img-responsive" src="../static/images/blog-2.jpg">
+                                </a>
+                                <a class="thumb" href="#">
+                                    <img alt="" class="img-responsive" src="../static/images/blog-3.jpg">
+                                </a>
+                                <a class="thumb" href="#">
+                                    <img alt="" class="img-responsive" src="../static/images/blog-4.jpeg">
+                                </a>
+                                <a class="thumb" href="#">
+                                    <img alt="" class="img-responsive" src="../static/images/blog-5.jpg">
+                                </a>
+                                <a class="thumb" href="#">
+                                    <img alt="" class="img-respons<img alt="" class="img-responsive" src="../static/images/blog-5.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="mailing-widget widget">
+                        <h4 class="widget-title mb40">Mailing List</h4>
+                        <div class="content-wiget">
+                            <p class="mb40">Subscribe to our newsletter for the latest updates and offers.</p>
+                            <form action="index.html">
+                                <div class="input-group">
+                                    <input class="form-control form-email-widget" placeholder="Email address" type="text"><span class="input-group-btn"><input class="btn btn-email" type="submit" value="✓"></span>
+                                </div>
+                            </form>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 footer-social">
+                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                <a class="google" href="#"><i class="fa fa-google-plus"></i></a>
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                <a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+                <a class="blog" href="#"><i class="fa fa-rss"></i></a>
+                <a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+            </div>
+            <div class="col-md-6 text-right">
+                <p class="copyright"><small>© 2019. Designed and Developed by Distinctive Themes - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></small></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+{%endmacro%}
+
+{%macro BackToTop()%}
+<a href="#" id="back-to-top"><i class="fa fa-long-arrow-up"></i></a>
+{%endmacro%}
+
+
+
+
+
+{%macro PreLoader()%}
+<div class="preloader">
+    <div class="preloader-img">
+        <span class="loading-animation animate-flicker"><img src="../static/images/loading.gif" alt="loading"/></span>
+    </div>
+</div>
+{%endmacro%}

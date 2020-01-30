@@ -245,7 +245,7 @@ span.x4:before,i.x4:before {
 #home {
     background-image: url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 107% 100%;
 }
 
 #home.fullheight.max-600, #home .fullheight.max-600 {
@@ -384,8 +384,8 @@ span.x4:before,i.x4:before {
 }
 
 img.logo {
-    max-height: 29px;
-    margin-top: 20px;
+    max-height: 45px;
+    margin-top: 11px;
 }
 
 .navbar-toggle .icon-bar {
@@ -689,14 +689,14 @@ textarea.form-control {
 #band-member-1 {
     background-image: url(../images/band-member-1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
 }
 
 #band-member-2 {
     background-image: url(../images/band-member-2.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 106% 93%;
     background-position: center;
 }
 

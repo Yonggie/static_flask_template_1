@@ -2589,7 +2589,7 @@ $(function(){function a(){e.toggleClass(j),d.toggleClass(i),f.toggleClass(k),g.t
 
   FRAMERATE = 30;
 
-  DURATION = 2000;
+  DURATION = 1000;
 
   COUNT_FRAMERATE = 20;
 

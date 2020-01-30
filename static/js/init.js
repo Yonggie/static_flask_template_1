@@ -71,10 +71,10 @@ jQuery(document).ready(function() {
     event.preventDefault();
   });
 
-  $("#home.backstretched").backstretch(["../static/images/hero-bg.jpg", "../static/images/gallery-6.jpg", "../static/images/section-bg-2.jpg", ], {
+  /*$("#home.backstretched").backstretch(["../static/images/hero-bg.jpg","../static/images/band-member-4.jpg", "../static/images/section-bg-2.jpg", ], {
     duration: 4000,
     fade: 800
-  });
+  });*/
 
   $('.dropdown').on('show.bs.dropdown', function(e) {
     var $dropdown = $(this).find('.dropdown-menu');

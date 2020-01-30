@@ -20,34 +20,30 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">首页 <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="{{url_for('index')}}">首页</a></li>
-                                    <li><a href="#">其他</a></li>
-                                    <li><a href="#">其他</a></li>
-                                    <li><a href="#">其他</a></li>
+                                    <li><a href="{{url_for('mini_program')}}">小程序</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">课程 <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                   <li><a href="{{url_for('courses_detail')}}">课程详情</a></li>
-                                  <li><a href="#">其他</a></li>
+                                  <li><a href="{{url_for('single_post')}}">课程评论</a></li>
                                   <li><a href="{{url_for('single_course')}}">单个课程</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新闻消息 <span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">往年回顾<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                  <li><a href="{{url_for('news_formats')}}">消息</a></li>
-                                  <li><a href="{{url_for('single_post')}}">单个课程评论</a></li>
-                                    <li><a href="#">其他</a></li>
-                                  <li><a href="#">其他</a></li>
+                                  <li><a href="{{url_for('former_years')}}">往年盛况</a></li>
+                                  <li><a href="{{url_for('single_post')}}">往届评论</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于 <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                   <li><a href="{{url_for('about_us')}}">关于我们</a></li>
-                                  <li><a href="#">其他</a></li>
-                                  <li><a href="#">其他</a></li>
+                                  <li><a href="#">购课须知</a></li>
+                                  <li><a href="#">法律声明</a></li>
                                 </ul>
                             </li>
                             <li><a href="{{url_for('contact_us')}}">联系我们</a></li>
@@ -68,18 +64,18 @@
 {%endmacro%}
 
 {%macro BigPicture(word,subword=' ')%}
-<header id="home" class="backstretched single-page-hero">
+<header id="home" class="backstretched single-page-hero" style="background-size:50% 100%">
             <div class="dark-overlay single-page-hero">
                 <div class="container single-page-hero">
                     <div class="vertical-center-js text-center">
                         <h1>{{word}}</h1>
                     </div>
                     <p class="section-sub-title">{{subword}}</p>
-                    <p>
-                        <a class="btn btn-white btn-lg page-scroll" href="#about-us" role="button">Why?</a>
-                        <a class="btn btn-lg btn-primary btn-green page-scroll" href="#our-team" role="button">Browse
-                            Courses</a>
-                    </p>
+<!--                    <p>-->
+<!--                        <a class="btn btn-white btn-lg page-scroll" href="#about-us" role="button">Why?</a>-->
+<!--                        <a class="btn btn-lg btn-primary btn-green page-scroll" href="#our-team" role="button">Browse-->
+<!--                            Courses</a>-->
+<!--                    </p>-->
                 </div>
             </div>
         </header>
@@ -91,10 +87,10 @@
         <div class="container">
             <div class="row cta">
                 <div class="col-sm-9">
-                    <h4>获取更多信息吗</h4>
+                    <h4></h4>
                 </div>
                 <div class="col-sm-3 text-right">
-                    <a href="{{url_for('contact_us')}}" class="btn btn-white btn-lg">联系我们！</a>
+                    <a href="{{url_for('contact_us')}}" class="btn btn-white btn-lg">联系我们，更多精彩！</a>
                 </div>
             </div>
         </div>
@@ -107,41 +103,49 @@
             <div class="col-2">
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="text-widget widget">
-                        <h4 class="widget-title mb40">Location</h4>
+                        <h4 class="widget-title mb40">联系地址1</h4>
                         <div class="widget-content">
-                            <p>Conveniently enhance high-quality imperatives vis-a-vis team driven technologies. Intrinsicly fashion economically sound communities rather than principle-centered deliverables. Synergistically impact.</p>
+                            <p>广东省广州市广州大学城<br> 广州大学<br> 众创空间</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="text-widget widget">
+                        <h4 class="widget-title mb40">联系地址2</h4>
+                        <div class="widget-content">
+                            <p>广东省广州市天河区<br> 中山大学<br> 二笔空间</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="useful-link-widget widget">
-                        <h4 class="widget-title mb40">Pages</h4>
+                        <h4 class="widget-title mb40">友情链接</h4>
                         <div class="widget-content">
                             <div class="useful-link-list">
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6 col-xs-6">
-                                        <ul class="list-unstyled">
+                                        <ul class="list-unstyled" style="width: 200px;">
                                             <li>
-                                                <i class="fa fa-angle-right"></i><a href="#">Teachers</a>
+                                                <i class="fa fa-angle-right"></i><a href="http://www.stugd.com/">广东专插本考试网</a>
                                             </li>
                                             <li>
-                                                <i class="fa fa-angle-right"></i><a href="#">Courses</a>
+                                                <i class="fa fa-angle-right"></i><a href="http://www.scnukj.com/history">华师科教</a>
                                             </li>
                                             <li>
-                                                <i class="fa fa-angle-right"></i><a href="#">Support</a>
+                                                <i class="fa fa-angle-right"></i><a href="#">专插本直通车</a>
                                             </li>
                                             <li>
-                                                <i class="fa fa-angle-right"></i><a href="#">Why Scholar</a>
+                                                <i class="fa fa-angle-right"></i><a href="#">教育部</a>
                                             </li>
                                             <li>
-                                                <i class="fa fa-angle-right"></i><a href="#">Social Media</a>
+                                                <i class="fa fa-angle-right"></i><a href="#">郝给力</a>
                                             </li>
                                             <li>
-                                                <i class="fa fa-angle-right"></i><a href="#">Site Map</a>
+                                                <i class="fa fa-angle-right"></i><a href="#">徐峥你赢了</a>
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <!--<div class="col-md-6 col-sm-6 col-xs-6">
                                         <ul class="list-unstyled">
                                             <li>
                                                 <i class="fa fa-angle-right"></i><a href="#">Company</a>
@@ -162,7 +166,7 @@
                                                 <i class="fa fa-angle-right"></i><a href="#">Policies</a>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </div>-->
                                 </div>
                             </div>
                         </div>
@@ -191,39 +195,26 @@
                                     <img alt="" class="img-responsive" src="../static/images/blog-5.jpg">
                                 </a>
                                 <a class="thumb" href="#">
-                                    <img alt="" class="img-respons<img alt="" class="img-responsive" src="../static/images/blog-5.jpg">
+                                    <img alt="" class="img-responsive" src="../static/images/blog-5.jpg">
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="mailing-widget widget">
-                        <h4 class="widget-title mb40">Mailing List</h4>
-                        <div class="content-wiget">
-                            <p class="mb40">Subscribe to our newsletter for the latest updates and offers.</p>
-                            <form action="index.html">
-                                <div class="input-group">
-                                    <input class="form-control form-email-widget" placeholder="Email address" type="text"><span class="input-group-btn"><input class="btn btn-email" type="submit" value="✓"></span>
-                                </div>
-                            </form>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
         <div class="row">
             <div class="col-md-6 footer-social">
+                <a class="qq" href="#"><i class="fa fa-qq"></i></a>
+                <a class="wechat" href="#"><i class="fa fa-wechat"></i></a>
+                <a class="weibo" href="#"><i class="fa fa-weibo"></i></a>
                 <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-                <a class="google" href="#"><i class="fa fa-google-plus"></i></a>
-                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-                <a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
                 <a class="blog" href="#"><i class="fa fa-rss"></i></a>
                 <a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a>
             </div>
             <div class="col-md-6 text-right">
-                <p class="copyright"><small>© 2019. Designed and Developed by Distinctive Themes - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></small></p>
+                    <a href="{{url_for('index')}}"><p class="copyright"><small>© 2019. 广州星创品质有限公司 </small></p></a>
             </div>
         </div>
     </div>

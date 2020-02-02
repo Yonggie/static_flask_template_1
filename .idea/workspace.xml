@@ -2,24 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea009e1d-4c24-48c3-bbde-8726f43c0819" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/alt-colors.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/alt-colors.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/band-member-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/band-member-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/logo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog-1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog-4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/cover-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/cover-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/cover-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/cover-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/cover-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/cover-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/cover-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/cover-4.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/images/logo2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/logo2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/logo4.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/logo4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/plugins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/logo3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/logo3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/logo4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/logo5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/logo6.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/macros.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/macros.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/news-formats.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/former-years.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/single-course.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/single-course.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/single-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/single-post.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +39,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="last_opened_file_path" value="E:/blog-website" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
@@ -101,7 +99,25 @@
       <option name="presentableId" value="Default" />
       <updated>1575084094700</updated>
     </task>
+    <task id="LOCAL-00001" summary="create mini program page&#10;finished contact-us page&#10;update index page">
+      <created>1580360846312</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580360846312</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -115,5 +131,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create mini program page&#10;finished contact-us page&#10;update index page" />
+    <option name="LAST_COMMIT_MESSAGE" value="create mini program page&#10;finished contact-us page&#10;update index page" />
   </component>
 </project>
